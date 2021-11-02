@@ -1,5 +1,5 @@
 function doSomething(key) {
-  const foo = /*webpack-rpc-inline-plugin*/require('./foo');
+  const foo = /*webpack-rpc-inline-plugin*/require('./bar.txt');
 
   foo();
 }
