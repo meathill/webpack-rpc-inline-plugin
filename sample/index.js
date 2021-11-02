@@ -1,4 +1,6 @@
 function doSomething(key) {
+  key = key || 'hello';
+
   const foo = /*webpack-rpc-inline-plugin*/require('./foo');
   const bar = require('./bar');
 
