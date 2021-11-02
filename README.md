@@ -41,24 +41,45 @@ const InlinePlugin = require('webpack-rpc-inline-plugin');
 module.exports = {
   plugins: [
     new InlinePlugin({
-      // the prefix will tell plugin which imports should be inlined
-      prefix: '/*webpack-rpc-inline-plugin*/',
+      // the rules will tell plugin which destination files should be inlined
+      rules: [
+
+      ],
+      // the exclue has higher priority than `rules`
+      exclude: [
+
+      ],
     }),
   ],
 };
 ```
 
-Add prefix to turn on plugin in your code:
-
 ```js
-// normal imports
-const lodash = require('lodash');
+// inline-function.js
+module.exports = function sayHello() {
+  return 'hello';
+}
 
+// index.js
 function rpcFunction() {
-  const inlineFunction = /*webpack-rpc-inline-plugin*/require('./inline-function.js');
+  const sayHello = require('./inline-function.js');
 }
 doRpcExecute(rpcFunction);
+
+
+// will be compiled to: main.js
+function rpcFunction() {
+  const sayHello = function sayHello() {
+    return 'hello';
+  }
+}
 ```
+
+
+Author
+------
+
+Meathill <meathill@gmail.com>
 
 
 LICENCE
