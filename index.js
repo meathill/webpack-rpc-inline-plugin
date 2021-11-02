@@ -34,7 +34,7 @@ class InlinePlugin {
   }
 
   apply(compiler) {
-    const {rules, exclude} = this.options || {};
+    const {rules = [], exclude = []} = this.options || {};
 
     const {webpack} = compiler;
     const {RawSource} = webpack.sources;

@@ -15,7 +15,7 @@ module.exports = {
   plugins: [
     new InlinePlugin({
       rules: [
-        /index\.js$/,
+        /main\.js$/,
       ],
     }),
   ],
