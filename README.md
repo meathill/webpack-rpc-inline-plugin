@@ -76,6 +76,12 @@ function rpcFunction() {
 ```
 
 
+Demo
+----
+
+You can run `npm run dev` to see the result in `/dist` folder.
+
+
 Author
 ------
 
