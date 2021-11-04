@@ -1,10 +1,11 @@
 {
   "name": "webpack-rpc-inline-plugin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "This plugin will inline scripts to the places where they are imported.",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --config sample/webpack.config.js"
+    "dev": "webpack --config sample/webpack.config.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   },
   "dependencies": {
     "schema-utils": "^3.1.1"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
   }
 }

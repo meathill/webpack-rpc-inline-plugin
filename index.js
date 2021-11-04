@@ -45,8 +45,8 @@ class InlinePlugin {
           if (!rules.find(rule => rule.test(key)) || exclude.find(rule => rule.test(key))) {
             continue;
           }
-          const {_value} = assets[key];
-          assets[key] = new RawSource(transpile(_value));
+          const {_valueAsString: code} = assets[key];
+          assets[key] = new RawSource(transpile(code));
         }
       });
     });
