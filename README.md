@@ -1,6 +1,9 @@
 Webpack RPC Inline Plugin
 ========
 
+![Workflow status](https://github.com/meathill/webpack-rpc-inline-plugin/actions/workflows/node.js.yml/badge.svg)
+
+
 This plugin will inline scripts to the places where they are imported.
 
 
