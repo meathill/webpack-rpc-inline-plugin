@@ -1,0 +1,11 @@
+.github
+.idea
+coverage
+dist
+sample
+test
+.dccache
+.editorconfig
+.eslintignore
+.eslintrc.js
+jest.config.js
