@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --config sample/webpack.config.js",
     "lint": "eslint --fix ./",
-    "test": "jest"
+    "test": "jest",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
