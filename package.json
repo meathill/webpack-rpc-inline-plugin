@@ -1,6 +1,6 @@
 {
   "name": "webpack-rpc-inline-plugin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "This plugin will inline scripts to the places where they are imported.",
   "main": "index.js",
   "scripts": {

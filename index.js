@@ -8,11 +8,11 @@ const schema = {
   properties: {
     rules: {
       type: 'array',
-      descripion: 'The JavaScript files should be converted',
+      description: 'The JavaScript files should be converted',
     },
     exclude: {
       type: 'array',
-      descripion: 'The JavaScript files should NOT be converted',
+      description: 'The JavaScript files should NOT be converted',
     },
   },
   additionalProperties: false,
