@@ -29,8 +29,11 @@ const defaultOptions = {
 
 class InlinePlugin {
   constructor(options = {}) {
-    validate(schema, options, defaultOptions);
-    this.options = options;
+    validate(schema, options, {
+      name: PLUGIN_NAME,
+      baseDataPath: 'options',
+    });
+    this.options = {...defaultOptions, ...options};
   }
 
   apply(compiler) {
